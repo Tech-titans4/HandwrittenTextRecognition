@@ -1,0 +1,9 @@
+batch_size: 16
+height: 32
+learning_rate: 0.0005
+max_text_length: 21
+model_path: Models/word_recog\202410042200
+train_epochs: 100
+train_workers: 20
+vocab: 'RsyEvZVnH?tP")''Ckrqw!428;09#zeJ73&Y1gcUMK/Omp6lX,f+iuWILhoAba.jT-dNSBD*GxQ(5F:'
+width: 128
