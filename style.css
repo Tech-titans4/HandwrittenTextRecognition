@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg,#001F3F, #b3e5fc, #4a90e2,#001F3F);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #4A8BDF, #EAD8B1);
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #EAD8B1;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #EAD8B1;
+  color: #333;
+  transform: scale(1.1);
+}
+
+/* Section Content */
+.content {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  background: #EAD8B1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4A8BDF;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Center the Home button at the top */
+
+
+/* Home button positioning */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3A6D8C;
+  color: #EAD8B1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.btn:hover {
+  background-color: #4A8BDF;
+  transform: scale(1.05);
+}
+
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #001F3F;
+  color: #EAD8B1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #4A8BDF;
+  transform: scale(1.05);
+}
+
+#fileName {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Shared Content Styling */
+.content, .content1 {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  background: #EAD8B1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h1, .content1 h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4A8BDF;
+}
+
+.content p, .content1 p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .content, .content1 {
+    padding: 30px 15px;
+  }
+
+  .content h1, .content1 h1 {
+    font-size: 2em;
+  }
+
+  .content p, .content1 p {
+    font-size: 1em;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content, .content1 {
+    padding: 20px 10px;
+  }
+
+  .content h1, .content1 h1 {
+    font-size: 1.8em;
+  }
+
+  .content p, .content1 p {
+    font-size: 0.9em;
+  }
+}

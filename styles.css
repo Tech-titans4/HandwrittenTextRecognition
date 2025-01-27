@@ -1,0 +1,236 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #EAD8B1, #6A9AB0, #3A6D8C);
+  color: #102C57;
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #6A9AB0, #EAD8B1);
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #001F3F;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color:#001F3F;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #B3C8CF;
+  color: #102C57;
+}
+
+/* Section Styling */
+section {
+  height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #001F3F;
+}
+
+.content {
+  background: #B3C8CF;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #102C57;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+.content ul {
+  text-align: justify;
+}
+
+#solutions #container {
+  display: flex;
+  justify-content: space-around; /* Aligns items evenly within the container */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+#container div {
+  background-color: #EAD8B1;
+  color: #001F3F;
+  width: 30%;  /* Make the width a percentage to fit three items in one row */
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#container div h2 {
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+/* Why Us Section */
+#whyus #container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+#whyus #container div {
+  text-align: center;
+}
+
+#whyus img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Contact Us Section */
+#contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-card {
+  background: #EAD8B1;
+  color: #011e3b;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #001F3F;
+}
+
+.contact-card h2 {
+  font-size: 1.5em;
+  color: #001F3F;
+  margin: 10px 0;
+}
+
+.contact-card p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Buttons */
+button, #start-button {
+  background: #001F3F;
+  color:#EAD8B1 ;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover, #start-button:hover {
+  background: #6A9AB0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #container div {
+    width: 90%;
+  }
+
+  .content {
+    padding: 15px 20px;
+  }
+
+  .content h1 {
+    font-size: 2em;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  #contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 90%;
+  }
+}
