@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Button</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <style>
+    .left-half, .right-half {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:black;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            
+        }
+        .left-half {
+            
+            margin-top: 60px;
+        }
+        .right-half {
+            background-color: #EAD8B1;
+            margin-top: 10px;
+        }
+  </style>
+</head>
+<body>
+  <h1 style="font-family:'Times New Roman', Times, serif; color:#001F3F; font-size: 80px; margin-top:10px;"><b>TEXTRACT</b></h1>
+  <br>
+  <a href="{{ url_for('index') }}"><button class="button">Home</button></a>
+  <!-- Main Container -->
+
+    <div class="left-half"><img src="{{ url_for('static', filename='images/3.png') }}" alt="Image" width="500" height="500"></div>
+    <div class="right-half">{% if text %}
+    <p id="t">{{text}}</p>
+    {%endif%}</div><br><br><br>
+    <section class="content1">
+    <h1>Download Your File</h1>
+    <form method="POST" action="/download" enctype="multipart/form-data">
+      <button class="button" type="submit">Download as Word</button>
+    </form><br><br>
+    <form method="POST" action="/pdf" enctype="multipart/form-data">
+      <button class="button"type="submit">Download as pdf</button></form>
+  
+</section>
+</body>
+</html>

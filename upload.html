@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+  <h1 style="font-family:'Times New Roman', Times, serif; color:#001F3F; font-size: 80px; margin-top:10px;"><b>TEXTRACT</b></h1>
+  <br>
+  <a href="{{ url_for('index') }}"><button class="button">Home</button></a>
+  <br><br>
+  <section class="content">
+    
+    <h1>Upload Your Files</h1>
+    <form method="POST" action="/uploading" enctype="multipart/form-data">
+      <input class="button" type="file" name="pic">
+      <button class="button" type="submit">Upload</button>
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textract</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">TEXTRACT</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#mission">Our Mission</a></li>
+        <li><a href="#solutions">Our Solutions</a></li>
+        <li><a href="#whyus">Why Us?</a></li>
+        <li><a href="#howitworks">How It Works</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="content">
+    <h1 style="font-family:'Times New Roman', Times, serif; color:#001F3F; font-size: 80px; margin-top:10px;"><b>TEXTRACT</b></h1>
+    <center><b><H3> TEXT + EXTRACT </H3></center></b>
+    <p style="font-size: 30px;"><b>Textract is more than just a tool—it's a gateway to smarter decisions and seamless operations. 
+      Explore what’s possible when advanced technology meets everyday challenges.</b></p>
+      <a href="{{ url_for('pic') }}"><button id="start-button">Try Now</button></a>
+</section>
+
+<!-- Mission Section -->
+<section id="mission" class="content">
+    <h1 style="font-family:'Times New Roman', Times, serif; font-size: 60px;"><b>Our Mission</b></h1>
+    <p style="font-size: 30px; color:#001F3F;"><b>To empower individuals and organizations with seamless access to their data through innovative 
+      text extraction and automation technologies. With a passionate team of tech enthusiasts and problem-solvers,
+      we are committed to helping businesses unlock the power of their data.</b></p>
+</section>
+
+<!-- Solutions Section -->
+<section id="solutions" class="content">
+    <h1 style="font-family:'Times New Roman', Times, serif;"><b>Our Solutions</b></h1>
+    <div id="container">
+        <div style="color:#001F3F;">
+            <b><h2 style="margin-top:10px; font-family:'Times New Roman', Times, serif;">Document Digitization</h2>
+        </div></b>
+        <div style="color:#001F3F;">
+            <h2 style="margin-top:10px; font-family:'Times New Roman', Times, serif;">Data Entry Automation</h2>
+        </div>
+        <div style="color:#001F3F;">
+            <h2 style="margin-top:10px; font-family:'Times New Roman', Times, serif;">Real-time Analytics</h2>
+        </div>
+    </div>
+    <div id="container">
+        <div style="color:#001F3F;">
+            <h2 style="margin-top:10px; font-family:'Times New Roman', Times, serif;">Document Preservation</h2>
+        </div>
+        <div style="color:#001F3F;">
+            <h2 style="margin-top:10px; font-family:'Times New Roman', Times, serif;">AI Intervention</h2>
+        </div>
+        <div style="color:#001F3F;">
+            <h2 style="margin-top:10px; font-family:'Times New Roman', Times, serif;">Best Practices</h2>
+        </div>
+    </div>
+</section>
+
+<!-- Why Us Section -->
+<section id="whyus" class="content">
+    <h1 style="font-family:'Times New Roman', Times, serif;">Why Textract?</h1>
+    <div id="container">
+        <div style="color:#001F3F;">
+            <img src="{{ url_for('static', filename='sclable.png')}}" style="height:70px; margin-top:20px;">
+            <h2 style="margin-top:25px; font-family:'Times New Roman', Times, serif;">Scalability</h2>
+        </div>
+        <div style="color:#001F3F;">
+            <img src="{{ url_for('static', filename='affordable.png')}}" style="height:70px; margin-top:20px;">
+            <h2 style="margin-top:25px; font-family:'Times New Roman', Times, serif;">Affordable</h2>
+        </div>
+        <div style="color:#001F3F;">
+            <img src="{{ url_for('static', filename='advanced_feature.png')}}" style="height:70px; margin-top:20px;">
+            <h2 style="margin-top:25px; font-family:'Times New Roman', Times, serif;">Advanced Features</h2>
+        </div>
+    </div>
+</section>
+
+
+<section id="howitworks" class="content">
+    <h1 style="font-family:'Times New Roman', Times, serif;">How Textract Works</h1>
+    <ul>
+        <li>
+            <h2 style="margin-top:10px;font-family:'Times New Roman', Times, serif;"><b>Image Upload:</b> Users upload an image of handwritten text through the website.</h2></li>
+
+        <li>
+           <h2 style="margin-top:10px;font-family:'Times New Roman', Times, serif;"><b>Preprocessing: </b>The image is resized, converted to grayscale, and normalized to prepare it for recognition.</h2>
+        </li>
+        <li>
+            <h2 style="margin-top:10px;font-family:'Times New Roman', Times, serif;"><b>Text Recognition:</b> The trained model processes the image to extract text using advanced machine learning techniques.</h2>
+        </li>
+        <li>
+            <h2 style="margin-top:10px; font-family:'Times New Roman', Times, serif;"><b>File Generation:</b> The recognized text is converted into a downloadable DOC or PDF file based on the user’s choice.</h2>
+        </li>
+        <li>
+            <h2 style="margin-top:10px; font-family:'Times New Roman', Times, serif;"><b>Output Delivery:</b> The file is made available for the user to download directly from the website.</h2>
+        </li>
+    </ul>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="content">
+    <h1 style="font-family:'Times New Roman', Times, serif; font-size: 80px;">Contact Us</h1>
+    <div id="contact-container">
+        <div class="contact-card">
+            <h2>Anusha R</h2>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRwRrnXSqcrNTQFRzcdNRsjzdxhccKrVRjKTGrxjTvdtHjFLtQpbvdTsPfsnddQFSHTkhgKr">anushagowda0503@gmail.com</p></a>
+        </div>
+        <div class="contact-card">
+            <h2>Disha M Hulkund</h2>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJfpsCrFXPqTqtwVpjBDXvvskDJRlwZBmvNMQpGNvrNzhfNxCBFbWCswlrvXbSgfQPqngMg">dishamahantesh@gmail.com</p></a>
+        </div>
+        <div class="contact-card">
+            <h2>Gayathri KR</h2>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJfpsCtDMWWnTdrrxhrNxtdTMcvcQqzzzXxcVGnMFWPrrCbBCmgcbRKfVmDKjhsSzqxPPFg">gayathrikurandwad@gmail.com</p></a>
+        </div>
+        <div class="contact-card">
+            <h2>Harshitha Atrey</h2>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRrlrHkhCTFfDNLZqsbZTkPQKqdqLPgwCdfHWgDRRVlVWWHfvXTrXHgQKSDlSzQbhzWqBnb">harshitha.atrey@gmail.com</p></a>
+        </div>
+    </div>
+</section>
+
+<!-- Add JavaScript -->
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
